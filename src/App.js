@@ -1,4 +1,4 @@
-import {Component} from 'react';
+import {Component, StrictMode} from 'react';
 import './App.css';
 
 const Header = () => {
@@ -41,7 +41,9 @@ const Btn = () => {
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <StrictMode>
+        <Header/>
+      </StrictMode>
       <Field/>
       <Btn/>
     </div>
